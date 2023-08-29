@@ -1,0 +1,45 @@
+def fazer_teste_vocacional():
+    print("Bem-vindo ao ChatBot de Orientação Vocacional para TI!")
+    print("Vou fazer algumas perguntas sobre seus interesses e gostos. Com base nas suas respostas, vou sugerir uma área de TI que pode combinar com você.\n")
+
+    pontos = 0
+
+    print("Pergunta 1: Qual atividade você mais gosta?")
+    resposta1 = input("a) Resolver quebra-cabeças e desafios.\nb) Criar coisas novas.\nc) Trabalhar com pessoas.\nDigite a opção correspondente: ")
+    
+    if resposta1 == 'a':
+        pontos += 3
+    elif resposta1 == 'b':
+        pontos += 2
+    elif resposta1 == 'c':
+        pontos += 1
+
+    print("\nPergunta 2: O que você acha mais interessante?")
+    resposta2 = input("a) Aprender sobre as últimas tecnologias.\nb) Lidar com dados e análises.\nc) Criar designs e interfaces.\nDigite a opção correspondente: ")
+    
+    if resposta2 == 'a':
+        pontos += 3
+    elif resposta2 == 'b':
+        pontos += 2
+    elif resposta2 == 'c':
+        pontos += 1
+
+    print("\nPergunta 3: Qual tipo de desafio você prefere?")
+    resposta3 = input("a) Resolver problemas lógicos e complexos.\nb) Encontrar maneiras eficientes de fazer as coisas.\nc) Lidar com situações imprevisíveis.\nDigite a opção correspondente: ")
+    
+    if resposta3 == 'a':
+        pontos += 3
+    elif resposta3 == 'b':
+        pontos += 2
+    elif resposta3 == 'c':
+        pontos += 1
+
+    if pontos >= 7:
+        print("\nCom base nas suas respostas, você pode ser adequado para áreas como Desenvolvimento de Software, Segurança da Informação ou Análise de Dados na TI.")
+    elif pontos >= 5:
+        print("\nCom base nas suas respostas, você pode se encaixar bem em posições relacionadas ao Suporte Técnico ou Gerenciamento de Projetos na área de TI.")
+    else:
+        print("\nCom base nas suas respostas, você pode preferir áreas não diretamente relacionadas à Tecnologia da Informação.")
+
+if __name__ == "__main__":
+    fazer_teste_vocacional()
